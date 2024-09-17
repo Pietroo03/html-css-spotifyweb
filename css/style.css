@@ -78,6 +78,7 @@ body{
 
 .bottom{
     height: 90px;
+    justify-content: space-between;
 }
 
 .container{
@@ -140,4 +141,58 @@ header{
 
 /* #endregion nav */
 
+
+/* #region recently played */
+
+
+
+/* #endregion recently played */
+
+/* #region create for */
+
+
+
+/* #endregion create for */
+
+/* #region popular artists */
+
+
+
+/* #endregion popular artists */
+
 /* #endregion content */
+
+/* #region bottom */
+
+/* #region left functions */
+
+
+
+/* #endregion left functions */
+
+/* #region middle functions */
+
+.mid-functions{
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .upper-functions{
+        justify-content: space-evenly;
+    }  
+    .bottom-functions{
+        justify-content: space-between;
+    }
+}
+
+/* #endregion middle functions */
+
+/* #region right functions */
+
+.right-functions{
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+
+/* #endregion right functions */
+
+/* #endregion bottom */
