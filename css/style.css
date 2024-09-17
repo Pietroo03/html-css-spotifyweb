@@ -49,7 +49,8 @@ body{
 }
 
 #debug .down-sidebar{
-    background-color: rgba(180, 39, 39, 0.664);
+    background-color: rgba(184, 119, 75, 0.674);
+    
 }
 
 #debug header{
@@ -86,6 +87,14 @@ body{
 
 .row{
     display: flex;
+}
+
+.col-2{
+    width: calc((100% / 12) *2);
+}
+
+[class^="col"] {
+    padding: 1rem;
 }
 
 /* #endregion utilities */
