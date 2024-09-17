@@ -1,10 +1,13 @@
 :root{
     --spoti-header-bg: #080b12;
+    --spoti-content-bg: #141922;
     --spoti-sidebar-bg: #000000;
     --spoti-bottom-bg: #282828;
     --spoti-content-nav-font: #75787c;
     --spoti-sidebar-font: #a3a3a3;
     --spoti-underline: #adff2f;
+    --spoti-white: #fdfdfd;
+    --spoti-descriptions: #7a7c81;
 }
 
 /* #region commons */
@@ -44,19 +47,6 @@ body{
     background-color: green;
 }
 
-#debug .up-sidebar{
-    background-color: rgba(184, 119, 75, 0.674);
-}
-
-#debug .down-sidebar{
-    background-color: rgba(184, 119, 75, 0.674);
-    
-}
-
-#debug header{
-    background-color: var(--spoti-header-bg);
-}
-
 /* #endregion debug */
 
 /* #region utilities */
@@ -65,6 +55,7 @@ body{
     width: 230px;
     flex-direction: column;
     justify-content: space-between;
+    background-color: var(--spoti-sidebar-bg);
 }
 
 .top{
@@ -73,11 +64,13 @@ body{
 
 .content{
     width: calc(100% - 230px);
+    background-color: var(--spoti-content-bg);
     flex-direction: column;
 }
 
 .bottom{
     height: 90px;
+    background-color: var(--spoti-bottom-bg);
     justify-content: space-between;
 }
 
@@ -96,6 +89,14 @@ body{
 
 [class^="col"] {
     padding: 1rem;
+}
+
+.title-content{
+    color: var(--spoti-white);
+}
+
+.description-title{
+    color: var(--spoti-descriptions);
 }
 
 /* #endregion utilities */
@@ -185,6 +186,7 @@ header{
         color: var(--spoti-content-nav-font);
         text-transform: uppercase;
     }
+    
 }
 
 /* #endregion nav */
@@ -212,9 +214,20 @@ header{
 
 /* #region bottom */
 
+.bottom{
+    color: var(--spoti-white);
+    padding: 1rem 0;
+}
+
 /* #region left functions */
 
+.left-functions{
+    padding-left: 0.5rem;
 
+    .author-song{
+        color: var(--spoti-descriptions);
+    }
+}
 
 /* #endregion left functions */
 
@@ -239,6 +252,7 @@ header{
 .right-functions{
     justify-content: flex-end;
     flex-direction: row-reverse;
+    padding-right: 0.5rem;
 }
 
 /* #endregion right functions */
