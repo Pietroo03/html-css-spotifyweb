@@ -182,6 +182,8 @@ header{
     a{
         padding: 0 0.5rem;
         text-decoration: none;
+        color: var(--spoti-content-nav-font);
+        text-transform: uppercase;
     }
 }
 
