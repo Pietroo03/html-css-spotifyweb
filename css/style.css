@@ -110,7 +110,44 @@ body{
 
 /* #region sidebar */
 
+.sidebar{
+    color: var(--spoti-sidebar-font);
 
+    .logo{
+        padding: 1rem;
+    }
+
+    .nav-sidebar{
+        padding-left: 1rem;
+        flex-direction: column;
+
+        a{
+            text-decoration: none;
+            color: var(--spoti-sidebar-font);
+            padding: 0.5rem 0;
+        }
+    }
+
+    .playlist{
+        padding-left: 1rem;
+
+        h3{
+            color: white;
+        }
+
+        div{
+            padding: 0.5rem 0;
+        }
+    }
+
+    .down-sidebar{
+        padding: 0 1rem;
+
+        hr{
+            margin: 1rem 0;
+        }
+    }
+}
 
 /* #endregion sidebar */
 
