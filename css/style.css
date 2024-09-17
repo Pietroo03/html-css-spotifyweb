@@ -1,0 +1,74 @@
+:root{
+    --spoti-header-bg: #080b12;
+    --spoti-sidebar-bg: #000000;
+    --spoti-bottom-bg: #282828;
+    --spoti-content-nav-font: #75787c;
+    --spoti-sidebar-font: #a3a3a3;
+    --spoti-underline: #adff2f;
+}
+
+/* #region commons */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+/* #endregion commons */
+
+/* #region debug */
+
+#debug{
+    border: 1px dashed;
+}
+
+#debug .top{
+    background-color: red;
+}
+
+#debug .sidebar{
+    background-color: blue;
+}
+
+#debug .content{
+    background-color: yellow;
+}
+
+#debug .bottom{
+    background-color: green;
+}
+
+/* #endregion debug */
+
+/* #region utilities */
+
+.sidebar{
+    width: 230px;
+}
+
+.top{
+    height: calc(100% - 90px);
+}
+
+.content{
+    width: calc(100% - 230px);
+}
+
+.bottom{
+    height: 90px;
+}
+
+/* #endregion utilities */
+
+/* #region flex */
+
+.d-flex{
+    display: flex;
+}
+
+/* #endregion flex */
