@@ -21,7 +21,7 @@
 body{
     height: 100vh;
     overflow: hidden;
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* #endregion commons */
@@ -171,7 +171,7 @@ img{
                 padding-left: 0.5rem;
                 display: inline-block;
                 vertical-align: super;
-                font-size: 25px;
+                font-size: 20px;
             }
 
             img{
@@ -190,7 +190,7 @@ img{
         padding-left: 1rem;
 
         div{
-            font-size: 25px;
+            font-size: 20px;
         }
 
         div:hover{
@@ -207,17 +207,15 @@ img{
         h3{
             color: white;
             padding-bottom: 0.5rem;
-            font-size: 25px;
+            font-size: 20px;
         }
 
         .add-playlist{
 
             div{
                 display: inline-block;
-                padding-left: 0.5rem;
-                
-            }
-            
+                padding-left: 0.5rem;   
+            }  
         }
 
         div{
@@ -237,7 +235,7 @@ img{
             div{
                 display: inline-block;
                 vertical-align: super;
-                font-size: 22px;
+                font-size: 20px;
                 padding-left: 0.5rem;
             }
 
@@ -336,7 +334,7 @@ header{
     div{
         color: white;
         text-transform: uppercase;
-        font-size: 25px;
+        font-size: 20px;
         border: 1px solid white;
         border-radius: 5rem;
         padding: 1rem 3rem;
