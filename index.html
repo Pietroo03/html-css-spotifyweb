@@ -5,24 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body id="debug">
+<body id="debu">
 
 <!-- Top -->
     <div class="top d-flex">
 <!-- Sidebar -->
         <div class="sidebar d-flex">
             <div class="up-sidebar">
-                <div class="logo">Logo</div>
+                <div class="logo">
+                    <img class="logo-lg" src="./img/logo.svg" alt="">
+                    <img class="logo-sm" src="./img/logo-small.svg" alt="">
+                </div>
                 <nav class="nav-sidebar d-flex">
-                    <a href="#">Home</a>
-                    <a href="#">Cerca</a>
-                    <a href="#">Libreria</a>
+                    <a href="#">
+                        <img src="./img/home.svg" alt="">
+                        <div>Home</div>
+                    </a>
+                    <a href="#">
+                        <img src="./img/search.svg" alt="">
+                        <div>Cerca</div>
+                    </a>
+                    <a href="#">
+                        <img src="./img/libreria.svg" alt="">
+                        <div>La tua libreria</div>
+                    </a>
                 </nav>
                 <div class="playlist">
-                    <h3>Playlist</h3>
-                    <div class="add-playlist"></div><span>Crea Playlist</span>
+                    <h3>PLAYLIST</h3>
+                    <div class="add-playlist">
+                        <i class="fa-sharp fa-solid fa-plus"></i>
+                        <div>Crea Playlist</div>
+                    </div>
+                        
                     <div>Nome Playlist</div>
                     <div>Nome Playlist</div>
                     <div>Nome Playlist</div>
@@ -34,8 +54,10 @@
             </div>
             <div class="down-sidebar">
                 <div class="install-username">
+                    <img src="./img/download.svg" alt="">
                     <div>Installa app</div>
                     <hr class="divider">
+                    <img id="user" src="./img/profile.svg" alt="">
                     <div class="user">John Doe</div>
                 </div>
             </div>
