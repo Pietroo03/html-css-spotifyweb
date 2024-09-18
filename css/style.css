@@ -324,6 +324,84 @@ img{
 
 /* #region content*/
 
+.content{
+
+    .title-content{
+        font-size: 30px;
+        padding-bottom: 1rem;
+    }
+    
+    .description{
+        text-align: center;
+    
+        .album{
+            color: white;
+            font-weight: bold;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+            font-size: 20px;
+        }
+        .creator{
+            color: var(--spoti-sidebar-font);
+            font-size: 20px;
+        }
+    }
+    
+    .image{
+        position: relative;
+    
+        &:hover{
+            img{
+                opacity: 0.2;
+            }
+    
+            i{
+                opacity: 1;
+            }
+        }
+    
+        img{
+            transition: 0.3s;
+        }
+    
+        i{
+            transition: 0.3s;
+            position: absolute;
+            left: calc(50% - 20px);
+            top: calc(50% - 20px);
+            font-size: 40px;
+            opacity: 0;
+        }
+    }
+
+    @media screen and (max-width: 1395px) {
+        .col-3-md{
+            width: calc((100% / 12) *3);
+        }
+        
+    }
+    
+    @media screen and (max-width: 1006px) {
+        .col-4-s{
+            width: calc((100% / 12) *4);
+        }
+    }
+    
+    @media screen and (max-width: 812px) {
+        .col-6-xs{
+            width: calc((100% / 12) *6);
+            
+        }
+    }
+    
+    @media screen and (max-width: 448px) {
+        .col-12-xxs{
+            width: 100%;
+        }
+    }
+}
+
+
 /* #region header */
 
 header{
@@ -406,80 +484,6 @@ header{
 
 .recently-played{
     padding: 1rem 0;
-
-    .title-content{
-        font-size: 30px;
-        padding-bottom: 1rem;
-    }
-
-    .description{
-        text-align: center;
-
-        .album{
-            color: white;
-            font-weight: bold;
-            padding-top: 1rem;
-            padding-bottom: 0.5rem;
-            font-size: 20px;
-        }
-        .creator{
-            color: var(--spoti-sidebar-font);
-            font-size: 20px;
-        }
-    }
-
-    .image{
-        position: relative;
-
-        &:hover{
-            img{
-                opacity: 0.2;
-            }
-
-            i{
-                opacity: 1;
-            }
-        }
-
-        img{
-            transition: 0.3s;
-        }
-
-        i{
-            transition: 0.3s;
-            position: absolute;
-            left: calc(50% - 20px);
-            top: calc(50% - 20px);
-            font-size: 40px;
-            opacity: 0;
-        }
-    }
-
-    @media screen and (max-width: 1395px) {
-        .col-3-md{
-            width: calc((100% / 12) *3);
-        }
-        
-    }
-
-    @media screen and (max-width: 1006px) {
-        .col-4-s{
-            width: calc((100% / 12) *4);
-        }
-    }
-
-    @media screen and (max-width: 812px) {
-        .col-6-xs{
-            width: calc((100% / 12) *6);
-
-        }
-    }
-
-    @media screen and (max-width: 448px) {
-        .col-12-xxs{
-            width: 100%;
-        }
-    }
 }
 
 /* #endregion recently played */
@@ -488,6 +492,10 @@ header{
 
 .create-for{
     padding: 1rem 0;
+
+    .title-content{
+        font-size: 30px;
+    }
 }
 
 /* #endregion create for */
