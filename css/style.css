@@ -137,6 +137,17 @@ img{
         }
     }
 
+    .up-sidebar{
+
+        hr{
+            display: inline-block;
+            height: 30px;
+            float: left;
+            margin-top: 1rem;
+            border: 2px solid var(--spoti-underline);
+        }
+    }
+
     img{
         width: 25px;
     }
@@ -157,8 +168,18 @@ img{
                 vertical-align: super;
                 font-size: 25px;
             }
+
+            img{
+                filter: brightness(50%);
+            }
+
+        }
+
+        a:hover{
+            filter: brightness(150%);
         }
     }
+
 
     .playlist{
         padding-left: 1rem;
@@ -167,10 +188,15 @@ img{
             font-size: 25px;
         }
 
+        div:hover{
+            filter: brightness(150%);
+        }
+
         i{
             background-color: lightgray;
             color: var(--spoti-sidebar-bg);
             padding: 0.5rem;
+            filter: brightness(50%);
         }
 
         h3{
@@ -214,6 +240,27 @@ img{
                 height: 25px;
                 background-color: lightgray;
                 border-radius: 50%;
+            }
+
+            .user{
+                color: white;
+                font-weight: bold;
+            }
+
+            .install{
+                padding-left: 0;
+            }
+
+            div.install{
+                vertical-align: top;
+            }
+
+            img.install{
+                filter: brightness(50%);
+            }
+
+            .install:hover{
+                filter: brightness(150%);
             }
 
         }
