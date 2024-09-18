@@ -76,6 +76,11 @@ body{
     background-color: var(--spoti-content-bg);
     flex-direction: column;
     overflow-y: auto;
+
+    @media screen and (max-width: 600px){
+    width: calc(100% - 60px);
+
+    }
 }
 
 .bottom{
@@ -307,7 +312,7 @@ img{
          
     }
 
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 601px){
         
         .logo-sm{
             display: none;
@@ -351,18 +356,49 @@ header{
 
 /* #region nav */
 
-.nav-content{
-    padding: 1rem;
-    justify-content: center;
-
-    a{
-        padding: 0 0.5rem;
-        text-decoration: none;
-        color: var(--spoti-content-nav-font);
-        text-transform: uppercase;
-    }
+.nav{
     
+    .nav-content{
+        padding: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        a{
+            padding: 0 2rem;
+            text-decoration: none;
+            color: var(--spoti-content-nav-font);
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        a:hover{
+            filter: brightness(150%);
+        }
+
+        .underline {
+            text-decoration: underline;
+            text-decoration-color: var(--spoti-underline);
+          }
+
+        @media screen and (max-width: 1165px){
+            justify-content: space-evenly;
+            
+            a{
+                padding: 0 1rem 3rem;
+            }
+          }
+
+        @media screen and (max-width: 601px){
+            justify-content: space-evenly;
+
+            a{
+                padding: 0 0 3rem;
+                font-size: 18px;
+            }
+        } 
+    }
 }
+
 
 /* #endregion nav */
 
