@@ -492,10 +492,6 @@ header{
 
 .create-for{
     padding: 1rem 0;
-
-    .title-content{
-        font-size: 30px;
-    }
 }
 
 /* #endregion create for */
@@ -504,6 +500,52 @@ header{
 
 .popular-artists{
     padding: 1rem 0;
+
+    .description-title{
+        color: var(--spoti-sidebar-font);
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    img{
+        border-radius: 50%;
+        width: 320px;
+        height: auto;
+    }
+
+    .image{
+        position: relative;
+    
+        &:hover{
+            img{
+                opacity: 0.2;
+            }
+    
+            i{
+                opacity: 1;
+            }
+        }
+    
+        img{
+            transition: 0.3s;
+        }
+    
+        .einaudi{
+            transition: 0.3s;
+            position: absolute;
+            vertical-align: top
+            font-size: 40px;
+            opacity: 0;
+        }
+
+        .lana{
+            transition: 0.3s;
+            position: absolute;
+            vertical-align: top;
+            font-size: 40px;
+            opacity: 0;
+        }
+    }
 }
 
 /* #endregion popular artists */
