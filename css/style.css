@@ -330,12 +330,20 @@ header{
 
     div{
         color: white;
+        text-transform: uppercase;
+        font-size: 25px;
         border: 1px solid white;
         border-radius: 5rem;
-        padding: 1rem 2rem;
-        height: 2rem;
+        padding: 1rem 3rem;
+        height: 50%;
+        margin-top: auto;
+        margin-right: 1rem;
         align-content: center;
         margin-top: 1rem;
+    }
+
+    div:hover{
+        transform: scale(1.1);
     }
 }
 
