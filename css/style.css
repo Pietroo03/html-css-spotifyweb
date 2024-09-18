@@ -90,7 +90,7 @@ body{
 }
 
 .container{
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
@@ -362,11 +362,12 @@ header{
         flex-wrap: wrap;
     
         a{
-            padding: 0 2rem;
+            padding: 0 1rem;
             text-decoration: none;
             color: var(--spoti-content-nav-font);
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 18px;
+            font-weight: bold;
         }
 
         a:hover{
@@ -400,11 +401,58 @@ header{
 
 /* #endregion nav */
 
-
 /* #region recently played */
 
 .recently-played{
     padding: 1rem 0;
+
+    .title-content{
+        font-size: 30px;
+        padding-bottom: 1rem;
+    }
+
+    .description{
+        text-align: center;
+
+        .album{
+            color: white;
+            font-weight: bold;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+            font-size: 20px;
+        }
+        .creator{
+            color: var(--spoti-sidebar-font);
+            font-size: 20px;
+        }
+    }
+
+    .image{
+        position: relative;
+
+        &:hover{
+            img{
+                opacity: 0.2;
+            }
+
+            i{
+                opacity: 1;
+            }
+        }
+
+        img{
+            transition: 0.3s;
+        }
+
+        i{
+            transition: 0.3s;
+            position: absolute;
+            left: calc(50% - 20px);
+            top: calc(50% - 20px);
+            font-size: 40px;
+            opacity: 0;
+        }
+    }
 }
 
 /* #endregion recently played */
