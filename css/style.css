@@ -96,6 +96,7 @@ body{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col-2{
@@ -451,6 +452,32 @@ header{
             top: calc(50% - 20px);
             font-size: 40px;
             opacity: 0;
+        }
+    }
+
+    @media screen and (max-width: 1395px) {
+        .col-3-md{
+            width: calc((100% / 12) *3);
+        }
+        
+    }
+
+    @media screen and (max-width: 1006px) {
+        .col-4-s{
+            width: calc((100% / 12) *4);
+        }
+    }
+
+    @media screen and (max-width: 812px) {
+        .col-6-xs{
+            width: calc((100% / 12) *6);
+
+        }
+    }
+
+    @media screen and (max-width: 448px) {
+        .col-12-xxs{
+            width: 100%;
         }
     }
 }
