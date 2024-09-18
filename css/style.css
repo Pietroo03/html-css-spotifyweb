@@ -21,6 +21,7 @@
 body{
     height: 100vh;
     overflow: hidden;
+    font-family: "Lato", sans-serif;
 }
 
 /* #endregion commons */
@@ -151,14 +152,20 @@ img{
             padding: 0.5rem 0;
 
             div{
+                padding-left: 0.5rem;
                 display: inline-block;
                 vertical-align: super;
+                font-size: 25px;
             }
         }
     }
 
     .playlist{
         padding-left: 1rem;
+
+        div{
+            font-size: 25px;
+        }
 
         i{
             background-color: lightgray;
@@ -169,6 +176,7 @@ img{
         h3{
             color: white;
             padding-bottom: 0.5rem;
+            font-size: 25px;
         }
 
         .add-playlist{
@@ -176,6 +184,7 @@ img{
             div{
                 display: inline-block;
                 padding-left: 0.5rem;
+                
             }
             
         }
@@ -197,6 +206,8 @@ img{
             div{
                 display: inline-block;
                 vertical-align: super;
+                font-size: 22px;
+                padding-left: 0.5rem;
             }
 
             #user{
