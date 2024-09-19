@@ -340,7 +340,7 @@ img{
         text-align: center;
     
         .album{
-            color: white;
+            color: var(--spoti-white);
             font-weight: bold;
             padding-top: 1rem;
             padding-bottom: 0.5rem;
@@ -382,7 +382,7 @@ img{
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%);
+            transform: translate(-50%, -50%);
             opacity: 0;
         }
     }
@@ -428,10 +428,10 @@ header{
     z-index: 1000;
 
     div{
-        color: white;
+        color: var(--spoti-white);
         text-transform: uppercase;
         font-size: 20px;
-        border: 1px solid white;
+        border: 1px solid var(--spoti-white);
         border-radius: 5rem;
         padding: 1rem 3rem;
         height: 50%;
@@ -546,11 +546,38 @@ header{
 /* #region left functions */
 
 .left-functions{
-    padding-left: 0.5rem;
+    padding: 1rem;
+    align-items: center;
 
-    .author-song{
+    .img-listening-song{
+        width: 40px;
+    }
+
+    .title-song-bottom{
+        padding-left: 1rem;
+        
+        .author-song{
+            color: var(--spoti-descriptions);
+        }
+    }
+
+    .heart{
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+    }
+
+    .heart, .folder{
         color: var(--spoti-descriptions);
     }
+
+    .author-song, .heart, .folder{
+        
+        &:hover{
+            filter: brightness(150%);
+        }
+    }
+
+
 }
 
 /* #endregion left functions */
