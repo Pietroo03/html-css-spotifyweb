@@ -1,3 +1,5 @@
+/* #region root */
+
 :root{
     --spoti-header-bg: #080b12;
     --spoti-content-bg: #141922;
@@ -9,6 +11,8 @@
     --spoti-white: #fdfdfd;
     --spoti-descriptions: #7a7c81;
 }
+
+/* #endregion root */
 
 /* #region commons */
 
@@ -61,8 +65,7 @@ body{
     flex-shrink: 0;
 
     @media screen and (max-width: 600px) {
-        width: 60px;
-        
+        width: 60px;   
     }
 }
 
@@ -228,7 +231,8 @@ img{
 
             div{
                 display: inline-block;
-                padding-left: 0.5rem;   
+                padding-left: 0.5rem; 
+                padding-bottom: 1rem;  
             }  
         }
 
@@ -238,6 +242,10 @@ img{
 
         ul{
             list-style: none;
+
+            li{
+                padding-bottom: 1rem;
+            }
         }
     }
 
