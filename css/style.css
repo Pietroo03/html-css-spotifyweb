@@ -235,6 +235,10 @@ img{
         div{
             padding: 0.5rem 0;
         }
+
+        ul{
+            list-style: none;
+        }
     }
 
     .down-sidebar{
@@ -338,6 +342,10 @@ img{
 /* #region content*/
 
 .content{
+
+    a{
+        text-decoration: none;
+    }
 
     .title-content{
         font-size: 30px;
@@ -480,15 +488,18 @@ header{
         }
 
         .underline {
-            text-decoration: underline;
-            text-decoration-color: var(--spoti-underline);
+            height: 2px;
+            width: 45px;
+            background-color: var(--spoti-underline);
+            margin-left: 50%;
+            transform: translate(-50%);
           }
 
         @media screen and (max-width: 1165px){
             justify-content: space-evenly;
             
             a{
-                padding: 0 1rem 3rem;
+                margin: 0 1rem 2rem;
             }
           }
 
