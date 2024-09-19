@@ -590,9 +590,61 @@ header{
 
     .upper-functions{
         justify-content: space-evenly;
+        padding-bottom: 1rem;
+        margin: 0 6rem;
+
+        div{
+            padding: 0 0.5rem;
+            
+            i{
+                font-size: 20px;
+            }
+
+            &:hover{
+                transform: scale(1.3);
+            }
+        }       
     }  
     .bottom-functions{
         justify-content: space-between;
+        align-items: center;
+
+        .listened-bar{
+            position: relative;
+            height: 5px;
+            width: 400px;
+            background-color: var(--spoti-content-nav-font);
+
+            .left-bar{
+                height: 5px;
+                width: 100px;
+                background-color: var(--spoti-sidebar-font);
+            }
+
+            
+            .point{
+                display: none;
+                background-color: var(--spoti-white);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+            
+            .left-bar:hover{
+                background-color: var(--spoti-underline);
+
+                .point{
+                    display: block;
+                    position: absolute;
+                    top: -2.5px;
+                    left: 95px;
+                }
+            }
+        }
+
+        .left-time, .right-time{
+            padding: 0 2.5rem;
+        }
     }
 }
 
